@@ -1,0 +1,50 @@
+#photoArray{
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+        'image1 image2 image3'
+        'image1  image4 image5';
+
+
+}
+#photoArray > div{
+    border: 2px solid red;
+    border-radius: .5rem;
+
+}
+#photoArray > div:first-child{
+    grid-area: image1;
+    background-image: url(assets/boise_idaho_temple_sunshine.jpeg);
+    background-image: cover;
+    height: 450px;
+    width: 100%;
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* .grid{  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+  } */
+  img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+  }
+  li > img {
+    width: auto;
+    height: 60px;
+  }
